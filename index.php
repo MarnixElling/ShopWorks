@@ -3,7 +3,8 @@
     <head>
         <title>Gaaf project haha nee</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script href="js/cards.js"></script>
+        <script src="js/cards.js"></script>
+        <script src="js/jquery.js"></script>
     </head>
     <body>
     <?php require('views/header.php'); ?>

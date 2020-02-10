@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Gaaf project haha nee</title>
-        <link type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script href="js/cards.js"></script>
     </head>
     <body>
     <?php require('views/header.php'); ?>

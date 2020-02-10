@@ -1,5 +1,5 @@
 @import 'variables.scss';
-
+//sass --watch sass/style.scss:css/style.css --style compressed
 .swipe_cards{
     *, *:before, *:after {
         box-sizing: border-box;
@@ -18,16 +18,16 @@
     
     
     .demo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: $w;
-    height: $h;
-    margin-left: $w/-2;
-    margin-top: $h/-2;
-    background: #F6F6F5;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
-    
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: $w;
+        height: $h;
+        margin-left: $w/-2;
+        margin-top: $h/-2;
+        background: #F6F6F5;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+        
     &__header {
         height: $headerH;
         background: #002942;

@@ -3,9 +3,9 @@
     <head>
     </head>
     <body>
-    <?php require('header.php'); ?>
+    <?php require('views/header.php'); ?>
     <!-- content -->
-    <?php require('footer.php'); ?>
+    <?php require('views/footer.php'); ?>
     <!-- script links -->
     </body>
 </html>

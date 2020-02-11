@@ -1,10 +1,5 @@
 @import 'variables.scss';
 //sass --watch sass/style.scss:css/style.css --style compressed
-
-body{
-    margin:0;
-}
-
 .swipe_cards{
     *, *:before, *:after {
         box-sizing: border-box;

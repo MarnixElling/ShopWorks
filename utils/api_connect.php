@@ -18,7 +18,4 @@ if(!$result){
     die("Connection Failure");
 }
 curl_close($curl);
-echo "<br />------<br />";
-$apiData = json_decode($result);
-var_dump($apiData);
-echo "<br />------";
+$api = json_decode($result, true);

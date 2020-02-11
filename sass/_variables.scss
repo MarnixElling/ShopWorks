@@ -13,6 +13,16 @@ $indigo: #303F9F;
 $cyan: #26C6DA;
 $lime: #AFB42B;
 $brown: #795548;
-
 $orange: #FF945A;
 $green: #B1DA96;
+
+// Typology
+%thin {
+    font-weight: 300;
+}
+%medium {
+    font-weight: 500;
+}
+%bold {
+    font-weight: 700;
+}

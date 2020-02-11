@@ -5,7 +5,6 @@ $data = $api['data'];
 ?>
 
 <div class="swipe_cards">
-<header class="demo__header"></header>
   <div class="demo__content">
     <div class="demo__card-cont">
 <?php

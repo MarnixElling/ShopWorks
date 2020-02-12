@@ -1,5 +1,37 @@
 @import 'variables.scss';
 //sass --watch sass/style.scss:css/style.css --style compressed
 body {
-    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    p {
+        font-family: 'Montserrat', sans-serif;
+    }
+    header {
+        .shape-left {
+            background-color: $white;
+            position: absolute;
+            z-index: 3;
+            width: 54%;
+            height: 214px;
+            margin-top: 112px;
+            margin-left: -50px;
+            transform: rotate(15deg);
+        }
+        .test {
+            @extend %gradient;
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+        }
+        .shape-right {
+            background-color: $white;
+            position: absolute;
+            z-index: 3;
+            width: 54%;
+            height: 214px;
+            margin-top: 112px;
+            margin-left: -50px;
+            transform: rotate(-15deg);
+        }
+    }
 }

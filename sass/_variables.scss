@@ -7,7 +7,9 @@ $cardTopH: 20.5rem;
 $cardBtmH: $cardH - $cardTopH;
 $imgSize: 10rem;
 
+$pink: #C45CB3;
 $purple: #7132B9;
+$blue-purple: #5953B5;
 $blue: #248CB6;
 $indigo: #303F9F;
 $cyan: #26C6DA;
@@ -15,6 +17,7 @@ $lime: #AFB42B;
 $brown: #795548;
 $orange: #FF945A;
 $green: #B1DA96;
+$white: #FFFFFF;
 
 // Typology
 %thin {
@@ -25,4 +28,7 @@ $green: #B1DA96;
 }
 %bold {
     font-weight: 700;
+}
+%gradient {
+    background-image: linear-gradient(to bottom right, $pink, $blue-purple);
 }

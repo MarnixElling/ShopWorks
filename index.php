@@ -9,7 +9,7 @@
     <body>
     <?php require('views/header.php'); ?>
     <!-- content -->
-    <?php require('views/product.php') ?>
+    <?php require('router.php') ?>
     <?php require('views/footer.php'); ?>
     <!-- script links -->
     <script src="js/jquery.js"></script>

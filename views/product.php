@@ -16,7 +16,7 @@ $data = $api['data'];
           <p class="demo__card__name">' . $product['media']['thumbnails']['url'] . '</p>
         </div>
         <div class="demo__card__btm">
-          <p class="demo__card__we">Product naam</p>
+          <p class="demo__card__we">'. $product["translated"]['name'].'</p>
         </div>
         <div class="demo__card__choice m--reject"></div>
         <div class="demo__card__choice m--like"></div>

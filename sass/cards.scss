@@ -18,13 +18,9 @@
     
     
     .demo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
         width: $w;
         height: $h;
         margin-left: $w/-2;
-        margin-top: $h/-2;
         background: #F6F6F5;
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
         
@@ -37,7 +33,6 @@
         overflow: hidden;
         position: relative;
         height: $h - $headerH;
-        padding-top: 4.5rem;
         user-select: none;
     }
     
@@ -73,10 +68,12 @@
         
         &.to-left {
         transform: translateX(-30rem) rotate(-30deg) !important;
+        display:none;
         }
         
         &.to-right {
         transform: translate(30rem) rotate(30deg) !important;
+        display:none;
         }
         
         &.below {
@@ -132,7 +129,7 @@
         
         &__we {
         text-align: center;
-        font-size: 2.2rem;
+        font-size: 12px;
         line-height: $cardBtmH;
         }
         

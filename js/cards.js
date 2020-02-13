@@ -7,6 +7,11 @@ $(document).ready(function() {
     var pullDeltaX = 0;
     var deg = 0;
     var $card, $cardReject, $cardLike;
+
+    function add_to_cart()
+    {
+      
+    }
   
     function pullChange() {
       animating = true;
@@ -25,8 +30,7 @@ $(document).ready(function() {
       if (pullDeltaX >= decisionVal) {
         $card.addClass("to-right");
         // console.log($card.value);
-        console.log($card.title);
-        console.log('adding to cart');
+        add_to_cart($cart);
       } else if (pullDeltaX <= -decisionVal) {
         $card.addClass("to-left");
       }

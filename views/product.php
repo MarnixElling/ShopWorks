@@ -10,10 +10,10 @@ $data = $api['data'];
       <?php
       foreach ($data as $product) {
         echo '
-      <div class="demo__card">
+      <div class="demo__card" title="'. $product["translated"]['name'].'" value="'.$product["calculatedListingPrice"]["from"]['totalPrice'].'">
         <div class="demo__card__top brown">
           <div class="demo__card__img" style="background-image : url(' . $product["cover"]["media"]["thumbnails"][0]["url"] . ')"></div>
-          <p class="demo__card__name">' . $product['media']['thumbnails']['url'] . '</p>
+          <p class="demo__card__name"> €'.$product["calculatedListingPrice"]["from"]['totalPrice'].'</p>
         </div>
         <div class="demo__card__btm">
           <p class="demo__card__we">'. $product["translated"]['name'].'</p>

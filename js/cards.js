@@ -24,6 +24,9 @@ $(document).ready(function() {
   
       if (pullDeltaX >= decisionVal) {
         $card.addClass("to-right");
+        // console.log($card.value);
+        console.log($card.title);
+        console.log('adding to cart');
       } else if (pullDeltaX <= -decisionVal) {
         $card.addClass("to-left");
       }

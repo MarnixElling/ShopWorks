@@ -8,9 +8,18 @@ $(document).ready(function() {
     var deg = 0;
     var $card, $cardReject, $cardLike;
 
-    function add_to_cart()
-    {
-      
+    function add_to_cart(card){
+        price = card.attr("value");
+        name = card.attr("title");
+        $.ajax(
+          {
+            url: "utils/insert_cart.php", 
+            type : 'POST',
+            data: {title: name, value:price},
+            success: function(result){
+              console.log(result);
+            }
+        });
     }
   
     function pullChange() {
@@ -29,8 +38,7 @@ $(document).ready(function() {
   
       if (pullDeltaX >= decisionVal) {
         $card.addClass("to-right");
-        // console.log($card.value);
-        add_to_cart($cart);
+        add_to_cart($card);
       } else if (pullDeltaX <= -decisionVal) {
         $card.addClass("to-left");
       }

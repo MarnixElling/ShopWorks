@@ -8,7 +8,7 @@ $conn;
     
 try
 {
-    $conn = new mysqli($this->host, $this->username, $this->password, $this->db_name);
+    $conn = new mysqli($host, $username, $password, $db_name);
 }
 catch(Exception $e)
 {
